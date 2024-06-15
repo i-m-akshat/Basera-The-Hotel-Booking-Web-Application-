@@ -109,21 +109,12 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Entity\EntityLayer\EntityLayer.csproj">
-      <Project>{f21e0c6d-bc06-4e94-8a79-f42fdb9de8c2}</Project>
-      <Name>EntityLayer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\HotelReservationApplciation-Api\HotelReservationApplication-Part2Api\HotelReservationApplication-Part2Api.csproj">
-      <Project>{32f3a93b-8ba0-46a5-99bc-9177abc82fdd}</Project>
-      <Name>HotelReservationApplication-Part2Api</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="Assets\Bootstrap\" />
     <Folder Include="Assets\FontAwesome\" />
     <Folder Include="Assets\Image\" />
     <Folder Include="Assets\Jquery\" />
     <Folder Include="Assets\Js\" />
+    <Folder Include="Controller\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
