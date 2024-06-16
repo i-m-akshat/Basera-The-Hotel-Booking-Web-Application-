@@ -160,6 +160,7 @@
     <Content Include="Common\AllHotels.aspx" />
     <Content Include="Common\Default.aspx" />
     <Content Include="Common\HotelDetails.aspx" />
+    <Content Include="Common\UserProfile.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Login.aspx" />
     <Content Include="packages\Microsoft.AspNet.Mvc.5.3.0\lib\net45\System.Web.Mvc.dll" />
@@ -318,6 +319,13 @@
     </Compile>
     <Compile Include="Common\Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Common\UserProfile.aspx.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\UserProfile.aspx.designer.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
