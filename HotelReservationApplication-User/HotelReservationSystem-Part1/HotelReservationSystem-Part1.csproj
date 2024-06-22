@@ -47,8 +47,16 @@
     <Reference Include="Microsoft.Owin, Version=4.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Owin.4.2.2\lib\net45\Microsoft.Owin.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
       <HintPath>packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Client.5.2.9\lib\net45\System.Net.Http.Formatting.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -59,6 +67,12 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Core.5.2.9\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.WebHost.5.2.9\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -73,6 +87,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\Dashboard.aspx" />
     <Content Include="Assets\Bootstrap\css\bootstrap-grid.css" />
     <Content Include="Assets\Bootstrap\css\bootstrap-grid.min.css" />
     <Content Include="Assets\Bootstrap\css\bootstrap-grid.rtl.css" />
@@ -95,11 +110,14 @@
     <Content Include="Assets\Bootstrap\js\bootstrap.esm.min.js" />
     <Content Include="Assets\Bootstrap\js\bootstrap.js" />
     <Content Include="Assets\Bootstrap\js\bootstrap.min.js" />
+    <Content Include="Assets\css\app.css" />
     <Content Include="Assets\css\index.css" />
     <Content Include="Assets\FontAwesome\css\all.min.css" />
     <Content Include="Assets\FontAwesome\js\all.min.js" />
     <Content Include="Assets\FontAwesome\license\LICENSE.txt" />
     <Content Include="Assets\Image\86597a5ad777499a9289dfbc11a816a9.jpeg" />
+    <Content Include="Assets\Image\dark.jpg" />
+    <Content Include="Assets\Image\darkSignUpbg.jpg" />
     <Content Include="Assets\Image\homestay-hotel.jpg" />
     <Content Include="Assets\Image\images %281%29.jpeg" />
     <Content Include="Assets\Image\images.jpeg" />
@@ -109,7 +127,11 @@
     <Content Include="Assets\Image\logo\Basera - Copy.png" />
     <Content Include="Assets\Image\logo\Basera.png" />
     <Content Include="Assets\Image\logo\favicon.ico" />
+    <Content Include="Assets\Image\SignUpbgimage.png" />
+    <Content Include="Assets\Image\wave %281%29.svg" />
+    <Content Include="Assets\Image\wave.svg" />
     <Content Include="Assets\Jquery\jquery-3.6.4.min.js" />
+    <Content Include="Assets\Js\app.js" />
     <Content Include="Assets\Js\index.js" />
     <Content Include="bin\HotelReservationSystem-Part1.dll" />
     <Content Include="bin\HotelReservationSystem-Part1.pdb" />
@@ -158,7 +180,9 @@
     <Content Include="bin\roslyn\vbc.exe" />
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
     <Content Include="Common\AllHotels.aspx" />
-    <Content Include="Common\Default.aspx" />
+    <SplashScreen Include="Common\Default.aspx">
+      <BrowseToURL>Default.aspx</BrowseToURL>
+    </SplashScreen>
     <Content Include="Common\HotelDetails.aspx" />
     <Content Include="Common\UserProfile.aspx" />
     <Content Include="Global.asax" />
@@ -292,6 +316,13 @@
     <Compile Include="Admin\Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Common\AllHotels.aspx.cs">
       <DependentUpon>AllHotels.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -327,6 +358,7 @@
     <Compile Include="Common\UserProfile.aspx.designer.cs">
       <DependentUpon>UserProfile.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Controller\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -362,6 +394,7 @@
     <Content Include="bin\roslyn\vbc.exe.config" />
     <Content Include="bin\roslyn\vbc.rsp" />
     <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="Assets\Image\dark.webp" />
     <None Include="packages.config" />
     <Content Include="packages\Microsoft.AspNet.Mvc.5.3.0\.signature.p7s" />
     <Content Include="packages\Microsoft.AspNet.Mvc.5.3.0\Content\Web.config.install.xdt" />
@@ -432,9 +465,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controller\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

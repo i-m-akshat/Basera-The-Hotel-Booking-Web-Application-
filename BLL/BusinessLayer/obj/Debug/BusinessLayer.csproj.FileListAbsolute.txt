@@ -1,0 +1,6 @@
+A:\asp.net Projects\HotelReservationSystem\BLL\BusinessLayer\bin\Debug\BusinessLayer.dll
+A:\asp.net Projects\HotelReservationSystem\BLL\BusinessLayer\bin\Debug\BusinessLayer.pdb
+A:\asp.net Projects\HotelReservationSystem\BLL\BusinessLayer\obj\Debug\BusinessLayer.csproj.AssemblyReference.cache
+A:\asp.net Projects\HotelReservationSystem\BLL\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+A:\asp.net Projects\HotelReservationSystem\BLL\BusinessLayer\obj\Debug\BusinessLayer.dll
+A:\asp.net Projects\HotelReservationSystem\BLL\BusinessLayer\obj\Debug\BusinessLayer.pdb

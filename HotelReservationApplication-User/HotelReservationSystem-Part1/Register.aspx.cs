@@ -13,5 +13,10 @@ namespace HotelReservationSystem_Part1
         {
 
         }
+
+        protected void btnRegister_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

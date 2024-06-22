@@ -1,0 +1,6 @@
+A:\asp.net Projects\HotelReservationSystem\DAL\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+A:\asp.net Projects\HotelReservationSystem\DAL\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+A:\asp.net Projects\HotelReservationSystem\DAL\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+A:\asp.net Projects\HotelReservationSystem\DAL\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+A:\asp.net Projects\HotelReservationSystem\DAL\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+A:\asp.net Projects\HotelReservationSystem\DAL\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
